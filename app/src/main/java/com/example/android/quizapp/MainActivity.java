@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         if (score == 6) {
             Toast.makeText(MainActivity.this, "Congratulations, 6 out of 6. You sure know, how to google!", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(MainActivity.this, "Pleb, learn to google", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Your score is " + score + "/6. Please try again.", Toast.LENGTH_SHORT).show();
         }
         //Set the score back to zero so score cannot be bigger than 6
         score = 0;

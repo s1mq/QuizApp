@@ -37,7 +37,7 @@
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="150dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1"
                         android:contentDescription="@string/content_image"
@@ -48,7 +48,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
 
                         <RadioButton
                             android:id="@+id/Q1A1"
@@ -341,7 +342,8 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/colorAccent"
             android:onClick="scoreResult"
-            android:text="@string/result_button" />
+            android:text="@string/result_button"
+            android:layout_marginBottom="16dp"/>
 
 
     </LinearLayout>
