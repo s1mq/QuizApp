@@ -19,17 +19,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="This man represents the art of ... ?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_one_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -38,9 +38,11 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
                         android:layout_weight="1"
-                        android:src="@drawable/rickroll"
-                        android:scaleType="centerCrop"/>
+                        android:contentDescription="@string/content_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rickroll" />
 
                     <RadioGroup
                         android:layout_width="0dp"
@@ -52,19 +54,19 @@
                             android:id="@+id/Q1A1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="RudolphRolling"/>
+                            android:text="@string/question_one_radio_one" />
 
                         <RadioButton
                             android:id="@+id/Q1A2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="RickRolling"/>
+                            android:text="@string/question_one_radio_two" />
 
                         <RadioButton
                             android:id="@+id/Q1A3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="RaymondRolling"/>
+                            android:text="@string/question_one_radio_three" />
 
                     </RadioGroup>
                 </LinearLayout>
@@ -75,24 +77,24 @@
             android:id="@+id/Q2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is the name of Geralt of Rivia's horse?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_two_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -102,25 +104,25 @@
                         android:id="@+id/Q2A1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Shadowflame"/>
+                        android:text="@string/question_two_radio_one" />
 
                     <RadioButton
                         android:id="@+id/Q2A2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nightsteed"/>
+                        android:text="@string/question_two_radio_two" />
 
                     <RadioButton
                         android:id="@+id/Q2A3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thunderbolt"/>
+                        android:text="@string/question_two_radio_three" />
 
                     <RadioButton
                         android:id="@+id/Q2A4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Roach"/>
+                        android:text="@string/question_two_radio_four" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -131,50 +133,54 @@
             android:id="@+id/Q3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Whom of the following have used the alias Robin?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_three_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <CheckBox
                     android:id="@+id/Q3A1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sweeney Todd"/>
+                    android:text="@string/question_three_check_one" />
+
                 <CheckBox
                     android:id="@+id/Q3A2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Dick Grayson"/>
+                    android:text="@string/question_three_check_two" />
+
                 <CheckBox
                     android:id="@+id/Q3A3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tim Drake"/>
+                    android:text="@string/question_three_check_three" />
+
                 <CheckBox
                     android:id="@+id/Q3A4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jason Todd"/>
+                    android:text="@string/question_three_check_four" />
+
                 <CheckBox
                     android:id="@+id/Q3A5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="John McClane"/>
+                    android:text="@string/question_three_check_five" />
 
             </LinearLayout>
 
@@ -184,24 +190,24 @@
             android:id="@+id/Q4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is the name of Blizzard's popular MMORPG?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_four_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -211,25 +217,25 @@
                         android:id="@+id/Q4A1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="World of Starcraft"/>
+                        android:text="@string/question_four_radio_one" />
 
                     <RadioButton
                         android:id="@+id/Q4A2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="World of Diablo"/>
+                        android:text="@string/question_four_radio_two" />
 
                     <RadioButton
                         android:id="@+id/Q4A3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="World of Overwatch"/>
+                        android:text="@string/question_four_radio_three" />
 
                     <RadioButton
                         android:id="@+id/Q4A4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="World of Warcraft"/>
+                        android:text="@string/question_four_radio_four" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -240,24 +246,24 @@
             android:id="@+id/Q5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What car is being pictured?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_five_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -265,10 +271,13 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/p1"
-                        android:scaleType="centerCrop"/>
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/content_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p1" />
 
                     <RadioGroup
                         android:layout_width="match_parent"
@@ -279,13 +288,13 @@
                             android:id="@+id/Q5A1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Lada Zhiguli"/>
+                            android:text="@string/question_five_radio_one" />
 
                         <RadioButton
                             android:id="@+id/Q5A2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mclaren P1"/>
+                            android:text="@string/question_five_radio_two" />
 
                     </RadioGroup>
                 </LinearLayout>
@@ -296,34 +305,43 @@
             android:id="@+id/Q6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is the answer to life the universe and everything?"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="sans-serif"
-                    android:layout_marginBottom="16dp"/>
+                    android:text="@string/question_six_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/Q6A1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Think of a number"
+                    android:hint="@string/number_hint_text"
                     android:inputType="textCapWords"
-                    android:maxLines="1"/>
+                    android:maxLines="1" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/scoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="scoreResult"
+            android:text="@string/result_button" />
 
 
     </LinearLayout>
