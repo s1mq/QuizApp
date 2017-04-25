@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">OK, Google?</string>
     <string name="question_one_text">This man represents the art of what?</string>
-    <string name="question_one_radio_one">RudolphRolling</string>
+    <string name="question_one_radio_one">RandyRolling</string>
     <string name="question_one_radio_two">RickRolling</string>
-    <string name="question_one_radio_three">RaymondRolling</string>
+    <string name="question_one_radio_three">RexRolling</string>
     <string name="question_two_text">What is the name of Geralt of Rivia\'s horse?</string>
     <string name="question_two_radio_one">Shadowflame</string>
     <string name="question_two_radio_two">Nightsteed</string>
